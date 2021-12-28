@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir ~/temp_glibc
 cd ~/temp_glibc
-wget -r --user="anonymous" --password="guest@email.com" ftp://ftp.acc.umu.se/mirror/osmc.tv/osmc/apt/pool/main/g/glibc/ -m
+wget -r --user="anonymous" --password="guest@email.com" ftp://ftp.acc.umu.se/mirror/osmc.tv/osmc/apt/pool/main/g/glibc/*_armhf.deb -m
 cd ~/temp_glibc/ftp.acc.umu.se/mirror/osmc.tv/osmc/apt/pool/main/g/glibc
 sudo dpkg -i *.deb
 sudo apt-get install -f
