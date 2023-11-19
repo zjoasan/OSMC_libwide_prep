@@ -28,6 +28,6 @@ if [[ $NonDecIV -lt $version ]]; then
    sudo sed  -i 's+/var/run/lirc/lircd $KODI+/var/run/lirc/lircd LIBC_WIDEVINE_PATCHLEVEL=1 $KODI+g' /usr/bin/mediacenter
    sudo systemctl start mediacenter
 else
-   sudo apt-get install python3-crypto python3-pycryptodome python3-pip
+   sudo apt-get install python3-cryptography python3-pycryptodome python3-pip
 fi
 
